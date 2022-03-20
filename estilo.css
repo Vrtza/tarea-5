@@ -1,0 +1,253 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  border: 2px solid black;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+header{
+display: flex;
+flex-flow: column;
+align-items: center;
+}
+
+.titulo{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.idiomasLi{
+  display: flex;
+  flex-flow: row;
+  list-style: none;
+  padding-left: 0px;
+}
+
+li a{
+  text-decoration: inherit;
+  color: black;
+}
+
+ a:active{
+    text-decoration: underline;
+}
+
+a:hover{
+   color: purple;
+}
+
+.idioma{
+
+  padding: 3px;
+}
+
+
+
+.logo{
+
+}
+
+.logo img{
+  margin-top: 15px;
+  width: 100px;
+  height: 100px;
+}
+
+.menuLi{
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  list-style: none;
+  padding: 0px;
+}
+
+
+.menuLi a, h3{
+margin: 3px;
+
+}
+
+
+/** MAIN **/
+MAIN {
+  border: 2px solid black;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+MAIN img{
+  width: 100%;
+}
+
+.DonBicho{
+  width: 150px;
+  clip-path: circle();
+  float: left;
+}
+
+.articulo{
+  display: block;
+  background-color: #c7c7c7;
+  overflow: auto;
+  padding: 10px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid red;
+}
+
+.p{
+  border-bottom: 2px solid red;
+}
+
+.iframe{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.iframe iframe{
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.descripcion{
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+.divCentral{
+  padding: 20px;
+}
+
+/** La comunidad del bosque **/
+.articuloComunidad{
+  margin-top: 20px;
+  display: flex;
+  flex-flow: column;
+}
+.dibujo{
+margin-top: 20px;
+margin-bottom: 20px;
+text-align: center;
+}
+/*footer*/
+
+footer{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+footer p{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.logoF{
+  padding: 30px;
+}
+.redesLi{
+  padding: 0px;
+  display: flex;
+  flex-flow: row;
+  list-style: none;
+}
+
+ .redes:hover {
+   background-color: #db5ab2;
+}
+
+.redes{
+  background-color: pink;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
+
+.footerLi{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  list-style: none;
+  padding: 0px;
+}
+
+.footerLi a{
+  color: white;
+}
+
+@media only screen and (min-width: 768px){
+  header{
+  width: 100%;
+  display: flex;
+  flex-flow: row-reverse;
+  }
+  .logo{
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-left: 25px;
+  }
+  .titulo{
+    width: 100%;
+    display: flex;
+    flex-flow: row-reverse;
+  }
+  .title{
+    position: absolute;
+    display: flex;
+    width: calc(100% - 50px);
+    justify-content: center;
+  }
+  .idiomasLi{
+  justify-content: flex-end;
+  margin: 10px;
+}
+  .menuLi{
+    display: flex;
+    flex-flow: row;
+  }
+  .menuLi a h3{
+    margin: 10px;
+  }
+
+
+/** La comunidad del bosque **/
+  .articuloComunidad{
+    display: flex;
+    flex-flow: row;
+    max-width: 60%;
+  }
+
+  .dibujo{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+
+  .footerLi{
+    display: flex;
+    flex-flow: row;
+  }
+  .footerLi a{
+    margin: 10px;
+  }
+  .footerLi a:hover{
+    color: #d95adb;
+  }
+
+}
